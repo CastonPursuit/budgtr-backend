@@ -3,7 +3,7 @@ const app = express();
 
 
 
-
+app.use('/items', itemsController)
 
 
 
