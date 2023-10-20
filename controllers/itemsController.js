@@ -92,16 +92,13 @@ itemsRouter.delete('/:id', (req, res, next) => {
         }
 
         const deletedItem = itemsArray.splice(itemIndex, 1); 
-        
+
         res.send(deletedItem[0]);
 
     } catch (error) {
         next(error);
     }
 });
-
-
-
 
 
 
